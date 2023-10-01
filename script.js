@@ -19,11 +19,8 @@ function fill(control) {
     }
     else if(count==9)
     {
-        // if (count % 2 != 0) {
             putData(control.id, "X");
             document.getElementById(control.id).style.pointerEvents = "none";
-        // }
-        // count++;
         if (checkWin()) {
             setTimeout(function () { alert("Winner") }, 200);
             setTimeout(reset, 200);
@@ -33,10 +30,6 @@ function fill(control) {
         setTimeout(reset, 200);
         }
     }
-    // if (!checkWin()) {
-    //     window.alert('Match Draw');
-    //     reset();
-    // }
 
 }
 
